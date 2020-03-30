@@ -16,7 +16,7 @@ const $highscoresBody = $("#highscores-screen-body");
 const $goBackBtn = $("#go-back-button");
 const $clearBtn = $("#clear-button");
 
- let totalTime = 120;
+ let totalTime = 360;
  let quizTime = 0;
 
  let correct = 0;
@@ -91,7 +91,7 @@ function quizGame() {
             event.target.style.backgroundColor = '#661917';
             wrong++;
             setTimeout(function() {
-            totalTime -= 20;
+            totalTime -= 25;
             if (totalTime <= 0) {
                 totalTime = 0;
             }
