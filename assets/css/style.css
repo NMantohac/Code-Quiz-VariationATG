@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+.wrapper {
+    padding: 30px 20px 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: 1s linear;
+}
+
+nav #view-highscores-button {
+   margin-top: -10px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 24px;
+   border: 3px solid lightblue;
+}
+
+#timer {
+    display: none;
+    width: 58%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    background: gold;
+    border: 3px solid lightblue;
+}
+
+
+#quiz-title {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    background: gold;
+    border: 3px solid lightblue;
+}
+  
+#start-screen,
+#question-screen,
+#end-screen,
+#highscores-screen {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 15px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px 10px;
+    background: gold;
+    border: 3px solid lightblue;
+}
+
+.card-header h2 {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.card-body {
+    min-height: 100px;
+    background: rgb(253, 233, 118);
+}
+  
+.card-body p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+#start-screen-header {
+    background: rgb(147, 219, 243);
+}
+
+#start-screen-footer {
+    background: rgb(147, 219, 243);
+}
+
+#start-button {
+    font-size: 20px;
+}
+
+#question-screen {
+    display: none;
+}
+
+#question-title {
+    background: rgb(147, 219, 243);
+}
+
+.button-choices {
+    margin-bottom: 20px;
+}
+
+#end-screen {
+    display: none;
+    margin-top: 30px;
+}
+
+#end-screen-header {
+    background: rgb(147, 219, 243);
+}
+
+#end-screen-title {
+    font-size: 50px;
+}
+
+#final-score {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#highscores-screen {
+    display: none;
+    margin-top: 50px;
+}
+
+#highscores-screen-header {
+    background: rgb(147, 219, 243);
+}
+
+#highscores-screen-footer {
+    background: rgb(147, 219, 243);
+}
+
+#go-back-button,
+#clear-button {
+    font-size: 20px;
+}
+
+.player-score {
+    float: right;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+  
+  #cf3 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  }  
