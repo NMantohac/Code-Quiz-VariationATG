@@ -91,7 +91,7 @@ function quizGame() {
             event.target.style.backgroundColor = '#661917';
             wrong++;
             setTimeout(function() {
-            totalTime -= 25;
+            totalTime -= 20;
             if (totalTime <= 0) {
                 totalTime = 0;
             }
@@ -131,7 +131,7 @@ function quizGame() {
                <h3 id="final-score">Final Score: ${quizTime}</h3>
                <p>Correct Answers: ${correct}</p>
                <p>Wrong Answers: ${wrong}</p>
-               <p>Overall Percent: ${((correct / "10") * 100).toFixed(0)}%</p>  
+               <p>Overall Percent: ${((correct / "30") * 100).toFixed(0)}%</p>  
                Enter Username/Initials:
                <div class="input-group mb-3">
                  <input type="text" class="form-control player" id="end-screen-input" placeholder="Username/Initials" aria-label="Recipient's username" aria-describedby="basic-addon2">

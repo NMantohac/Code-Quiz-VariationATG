@@ -104,8 +104,17 @@ nav #view-highscores-button {
     background: rgb(147, 219, 243);
 }
 
+#test-knowledge-title {
+    font-size: 30px;
+}
+
 #start-screen-footer {
     background: rgb(147, 219, 243);
+}
+
+#spoiler-warning {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #start-button {
