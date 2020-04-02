@@ -16,7 +16,7 @@ const $highscoresBody = $("#highscores-screen-body");
 const $goBackBtn = $("#go-back-button");
 const $clearBtn = $("#clear-button");
 
- let totalTime = 360;
+ let totalTime = 250;
  let quizTime = 0;
 
  let correct = 0;
@@ -71,7 +71,7 @@ function quizGame() {
         event.preventDefault();
 
         if ($(event.target).html() === answer) {
-            event.target.style.backgroundColor = '#164032';
+            event.target.style.backgroundColor = '#008000';
             correct++;
             setTimeout(function() {
                 $questionCard.empty();
@@ -87,8 +87,8 @@ function quizGame() {
             }, 500);
         }
         else {
-            event.target.style.borderColor = '#e53935';
-            event.target.style.backgroundColor = '#661917';
+            // event.target.style.borderColor = '#e53935';
+            event.target.style.backgroundColor = '#eb0c0c';
             wrong++;
             setTimeout(function() {
             totalTime -= 20;
